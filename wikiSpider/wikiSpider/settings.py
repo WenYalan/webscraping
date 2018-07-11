@@ -9,6 +9,7 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
+LOG_LEVEL = 'ERROR'
 BOT_NAME = 'wikiSpider'
 
 SPIDER_MODULES = ['wikiSpider.spiders']
