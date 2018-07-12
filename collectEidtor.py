@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import datetime
 import random
 import re
+from JSONparse import getCountry
 
 random.seed(datetime.datetime.now())
 
@@ -36,7 +37,10 @@ while(len(links)>0):
 		print("--------------")
 		historyIPs = getHistoryIPs(link.attrs['href'])
 		for historyIP in historyIPs:
-			print(historyIP)
+			# print(historyIP)
+			country = getCountry(historyIP)
+			if country is not None:
+				print(historyIP+" is from "+country)
 	# 随机选择主页面中的一个链接，捕获其中的links，进行historyIP打印
 	newLink = links[random.randint(0,len(links)-1)].attrs['href']
 	links = getLinks(newLink)

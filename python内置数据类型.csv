@@ -1,0 +1,44 @@
+"类型
+","描述
+","例子
+"
+"str
+","一个由字符组成的不可更改的有序列。在Python 3.x里，字符串由Unicode字符组成。
+","'Wikipedia'""Wikipedia""""""""Spanningmultiplelines""""""
+"
+"bytes
+","一个由字节组成的不可更改的有序列。
+","b'Some ASCII'b""Some ASCII""
+"
+"list
+","可以包含多种类型的可改变的有序列
+","[4.0, 'string', True]
+"
+"tuple
+","可以包含多种类型的不可改变的有序列
+","(4.0, 'string', True)
+"
+"set, frozenset
+","与数学中集合的概念类似。无序的、每个元素唯一。
+","{4.0, 'string', True} frozenset([4.0, 'string', True])
+"
+"dict或map
+","一个可改变的由键值对组成的无序列。
+","{'key1': 1.0, 3: False}
+"
+"int
+","精度不限的整数
+","42
+"
+"float
+","浮点数。精度与系统相关。
+","3.1415927
+"
+"complex
+","复数
+","3+2.7j
+"
+"bool
+","逻辑值。只有两个值：真、假
+","TrueFalse
+"
